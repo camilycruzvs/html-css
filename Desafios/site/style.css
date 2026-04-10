@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-titulos: 'Montserrat', cursive;
+    --fonte-textos: 'Lora', cursive;
+    --fonte-destaque: 'Raleway', cursive;
+
+    --cor00: #B0B0B0;
+    --cor01: #DEE2E6;
+    --cor02: #ADB5BD;
+    --cor03: #6C757D;
+    --cor04: #495057;
+    --cor05: #343A40;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, white, var(--cor01));
+    font-family: var(--fonte-padrao);
+    
+    
+}
+
+header {
+    background-color: var(--cor05);
+    padding: 10px;
+}
+
+header > h1 {
+    color: white;
+    font-size: 1.5em;
+    font-family: var(--fonte-titulos);
+}
+
+nav {
+    background-color: var(--cor05);
+    font-family: var(--fonte-destaque);
+    padding: 5px;
+    font-size: .9em;
+    text-align: end;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 3px 3px 0px 0px;
+    transition-duration: .7s;
+    font-weight: bold;
+}
+
+nav > a:hover {
+    background-color: var(--cor03);
+    color: var(--cor05);
+}
+
+#apresentacao {
+    
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    font-family: var(--fonte-textos);
+}
+
+#apresentacao > h1, h3 {
+    text-align: center;
+    font-family: var(--fonte-textos);
+}
+
+#apresentacao > p {
+    margin-bottom: 20px;
+
+}
+
+.tag {
+    font-family: var(--fonte-destaque);
+    font-size: 1em;
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.curriculo > a {
+    background-color: var(--cor03);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#projetos {
+    background-color: var(--cor02);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+#apresentacao > img {
+    max-width: 350px;
+    margin-bottom: 15px;
+}
+
+.imagens {
+    max-width: 350px;
+    background-color: var(--cor03);
+    padding: 10px;
+}
+

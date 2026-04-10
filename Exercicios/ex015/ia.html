@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açaiteria Delícia Roxa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6a0dad, #ba55d3, #dda0dd);
+            /* Gradiente roxo */
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4b0082, #8a2be2);
+            /* Gradiente roxo escuro */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .produtos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .produto {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .produto h3 {
+            margin-top: 0;
+        }
+
+        .produto ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .produto li {
+            margin: 5px 0;
+        }
+
+        .contato {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #4b0082, #8a2be2);
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .produtos {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Açaiteria Delícia Roxa</h1>
+        <p>O melhor açaí da cidade, com sabores irresistíveis!</p>
+    </header>
+
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos">
+            <div class="produto">
+                <h3>Açaí Tradicional</h3>
+                <p>Delicioso açaí puro, cremoso e refrescante.</p>
+                <ul>
+                    <li>Tamanho P: R$ 8,00</li>
+                    <li>Tamanho M: R$ 12,00</li>
+                    <li>Tamanho G: R$ 16,00</li>
+                </ul>
+                <p>Acompanhamentos: Banana, granola, leite em pó.</p>
+            </div>
+            <div class="produto">
+                <h3>Açaí Especial</h3>
+                <p>Com frutas frescas e toppings premium.</p>
+                <ul>
+                    <li>Tamanho P: R$ 10,00</li>
+                    <li>Tamanho M: R$ 15,00</li>
+                    <li>Tamanho G: R$ 20,00</li>
+                </ul>
+                <p>Acompanhamentos: Morango, kiwi, chocolate.</p>
+            </div>
+            <div class="produto">
+                <h3>Açaí Vegano</h3>
+                <p>Opção sem lactose, com leite de coco.</p>
+                <ul>
+                    <li>Tamanho P: R$ 9,00</li>
+                    <li>Tamanho M: R$ 13,00</li>
+                    <li>Tamanho G: R$ 17,00</li>
+                </ul>
+                <p>Acompanhamentos: Aveia, sementes, frutas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Entre em Contato</h2>
+        <p>Endereço: Rua das Frutas, 123 - Centro, Cidade</p>
+        <p>Telefone: (11) 99999-9999</p>
+        <p>Email: contato@acaiteriadeliciaroxa.com</p>
+        <p>Horário: Seg-Sex: 10h-22h | Sáb-Dom: 12h-20h</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Açaiteria Delícia Roxa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
