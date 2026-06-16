@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 700px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: #dcd3ca;
+            padding: 7px;
+        }
+
+        thead {
+            background: lightslategray;
+            color: white;
+        }
+
+
+        th, td {
+            border: 1px solid black;
+            padding: 7px;
+        }
+
+        .quem {
+            background: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="4" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3" class="quem" scope="rowgroup">Mulheres</th>
+                <td>Stefany Medvedovisk</td>
+                <td>Alien</td>
+                <td>Rebeldes</td>
+                <td>Vingadores</td>
+            </tr>
+
+            <tr>
+                <td>Rafaela Andrade</td>
+                <td> Soy Luna</td>
+                <td>Titanic</td>
+                <td>Lucy</td>
+            </tr>
+
+            <tr>
+                <td>Felícia Cullen</td>
+                <td>Eclipse</td>
+                <td>Amanhecer</td>
+                <td>Crepúsculo</td>
+            </tr>
+
+            <tr>
+                <th rowspan="4" class="quem" scope="rowgroup">Homens</th>
+                <td>Stefan Mededovisk</td>
+                <td>Toy Story</td>
+                <td>Batman</td>
+                <td>Naruto</td>
+            </tr>
+
+            <tr>
+                <td>Rafael Andrade</td>
+                <td>Hulk</td>
+                <td>Star Wars</td>
+                <td>Intocáveis</td>
+            </tr>
+
+            <tr>
+                <td>Félix Cullen</td>
+                <td>Wall-E</td>
+                <td>Matrix</td>
+                <td>Gladiador</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
