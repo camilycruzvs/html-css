@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas Responsivas</title>
+    <title>Site Teste</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background-color: lightslategrey;
         }
 
         table {
@@ -28,17 +29,17 @@
             background-color: rgb( 228, 228, 228);
         }
 
+        tr:nth-child(odd) {
+            background-color: lightsteelblue;
+        }
+
         .caixa {
             overflow-x: auto;
         }
     </style>
 </head>
 <body>
-    <h1>Tabelas em ttelas pequenas</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas obcaecati rem cupiditate, placeat quaerat quas repudiandae possimus. Harum corrupti, dolor veritatis officia perferendis laudantium dolorem qui assumenda, corporis accusamus quidem.</p>
-
-    <div class="caixa">
-        <table>
+    <table>
             <caption>Vendas de Produtos por Mês</caption>
             <thead>
                 <tr>
@@ -165,6 +166,6 @@
                 </tr>
             </tbody>
         </table>
-    </div>
+
 </body>
 </html>
